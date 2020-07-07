@@ -109,6 +109,7 @@
 <script>
 import DynamicLink from "../components/DynamicLink.vue";
 import "tippy.js/themes/light.css";
+import 'tippy.js/animations/shift-away.css';
 import tippy, {animateFill} from "tippy.js";
 
 export default {
@@ -185,6 +186,7 @@ export default {
         content: template,
         interactive: true,
         animation: this.options.tooltipAnimationType,
+        animateFill: true,
         plugins: [animateFill],
         role: "Menu",
         // trigger: 'click', // for testing
